@@ -193,3 +193,8 @@ h1 {
     background: #dc2626;
     border-color: #dc2626;
 }
+
+/* ===== FOOTER ===== */
+.quiz-footer {
+    margin-top: 25px;
+}
