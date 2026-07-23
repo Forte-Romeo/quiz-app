@@ -198,3 +198,20 @@ h1 {
 .quiz-footer {
     margin-top: 25px;
 }
+
+/* ===== RESULT SCREEN ===== */
+.result-box {
+    text-align: center;
+    margin: 35px 0;
+}
+
+#score-text {
+    font-size: 4rem;
+    color: #22c55e;
+}
+
+#percentage-text {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #cbd5e1;
+}
