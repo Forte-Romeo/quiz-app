@@ -106,3 +106,23 @@ h1 {
     cursor: not-allowed;
     transform: none;
 }
+
+/* ===== QUIZ HEADER ===== */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.question-counter {
+    font-weight: 500;
+    color: #cbd5e1;
+}
+
+.timer {
+    background: #334155;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+}
