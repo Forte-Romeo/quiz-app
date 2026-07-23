@@ -15,3 +15,18 @@ body {
     padding: 20px;
     color: #f8fafc;
 }
+
+/* ===== APP CONTAINER ===== */
+.container {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* ===== SCREENS ===== */
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
