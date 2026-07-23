@@ -153,3 +153,43 @@ h1 {
     font-size: 1.6rem;
     line-height: 1.5;
 }
+
+/* ===== ANSWERS ===== */
+.answer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.answer-btn {
+    width: 100%;
+    text-align: left;
+    background: #334155;
+    border: 2px solid transparent;
+    color: white;
+    padding: 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.answer-btn:hover {
+    border-color: #3b82f6;
+    background: #3b4658;
+}
+
+.answer-btn.selected {
+    border-color: #3b82f6;
+    background: #2563eb;
+}
+
+.answer-btn.correct {
+    background: #16a34a;
+    border-color: #16a34a;
+}
+
+.answer-btn.wrong {
+    background: #dc2626;
+    border-color: #dc2626;
+}
