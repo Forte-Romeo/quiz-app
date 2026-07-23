@@ -228,3 +228,49 @@ h1 {
         transform: translateY(0);
     }
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .card {
+        padding: 25px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #question-text {
+        font-size: 1.3rem;
+    }
+    .quiz-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .info-box {
+        width: 100px;
+    }
+    #score-text {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    .card {
+        padding: 20px;
+        border-radius: 18px;
+    }
+    .info-box {
+        width: 90px;
+        padding: 15px;
+    }
+    .info-box h3 {
+        font-size: 1.4rem;
+    }
+    .btn {
+        padding: 14px;
+    }
+    .answer-btn {
+        padding: 15px;
+    }
+}
