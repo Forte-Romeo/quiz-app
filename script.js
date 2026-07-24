@@ -158,3 +158,25 @@ function startQuiz() {
     startTimer();
     loadQuestion();
 }
+
+// ===== LOAD QUESTION ===== //
+function loadQuestion() {
+    nextBtn.disabled = true;
+    selectedAnswer = null;
+    answerButtons.innerHTML = "";
+
+    const currentQuiz = quizData[currentQuestion];
+    currentQuestionText.textContent = currentQuestion + 1;
+    questionText.textContent = currentQuiz.question;
+
+    currentQuiz.options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.classList.add("answer-btn");
+        button.addEventListener("click", () => selectAnswer(button, option));
+
+        answerButtons.appendChild(button);
+    });
+
+    updateProgressBar();
+}
