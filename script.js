@@ -132,3 +132,11 @@ const scoreText = document.getElementById("score-text");
 const percentageText = document.getElementById("percentage-text");
 
 const timerElement = document.getElementById("timer");
+
+// ===== VARIABLES ===== //
+let currentQuestion = 0;
+let score = 0;
+let selectedAnswer = null;
+
+let timeLeft = 300;
+let timer;
