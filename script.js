@@ -258,3 +258,9 @@ function endQuiz() {
     percentageText.textContent = `${percentage}%`;
     progressBar.style.width = "100%";
 }
+
+// ===== RESTART QUIZ ===== //
+restartBtn.addEventListener("click", () => {
+    resultScreen.classList.remove("active");
+    startScreen.classList.add("active");
+});
