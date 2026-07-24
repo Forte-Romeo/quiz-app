@@ -217,3 +217,10 @@ nextBtn.addEventListener("click", () => {
         endQuiz();
     }
 });
+
+// ===== PROGRESS BAR ===== //
+function updateProgressBar() {
+    const progress = ((currentQuestion) / quizData.length) * 100;
+
+    progressBar.style.width = `${progress}%`;
+}
