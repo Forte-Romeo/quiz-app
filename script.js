@@ -247,3 +247,14 @@ function updateTimer() {
 
     timerElement.textContent = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
+
+// ===== END QUIZ ===== //
+function endQuiz() {
+    clearInterval(timer);
+    quizScreen.classList.remove("active");
+    resultScreen.classList.add("active");
+    scoreText.textContent = `${score} / ${quizData.length}`;
+    const percentage = Math.round((score / quizData.length) * 100);
+    percentageText.textContent = `${percentage}%`;
+    progressBar.style.width = "100%";
+}
