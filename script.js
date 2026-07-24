@@ -140,3 +140,21 @@ let selectedAnswer = null;
 
 let timeLeft = 300;
 let timer;
+
+// ===== START QUIZ ===== //
+startBtn.addEventListener("click", startQuiz);
+
+function startQuiz() {
+    startScreen.classList.remove("active");
+    quizScreen.classList.add("active");
+
+    currentQuestion = 0;
+    score = 0;
+
+    timeLeft = 300;
+
+    totalQuestionsText.textContent = quizData.length;
+
+    startTimer();
+    loadQuestion();
+}
