@@ -180,3 +180,28 @@ function loadQuestion() {
 
     updateProgressBar();
 }
+
+// ===== SELECT ANSWER ===== //
+function selectAnswer(button, option) {
+    if (selectedAnswer !== null) return;
+    selectedAnswer = option;
+    nextBtn.disabled = false;
+
+    const correctAnswer = quizData[currentQuestion].answer;
+    const buttons = document.querySelectorAll(".answer-btn");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+
+        if (btn.textContent === correctAnswer) {
+            btn.classList.add("correct");
+        }
+    });
+
+    if (option === correctAnswer) {
+        score++;
+    } 
+    else {
+        button.classList.add("wrong");
+    }
+}
