@@ -205,3 +205,15 @@ function selectAnswer(button, option) {
         button.classList.add("wrong");
     }
 }
+
+// ===== NEXT QUESTION ===== //
+nextBtn.addEventListener("click", () => {
+    currentQuestion++;
+
+    if (currentQuestion < quizData.length) {
+        loadQuestion();
+    } 
+    else {
+        endQuiz();
+    }
+});
