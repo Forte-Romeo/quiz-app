@@ -110,3 +110,25 @@ const quizData = [
         answer: "Document Object Model"
     }
 ];
+
+// ===== ELEMENTS ===== //
+const startScreen = document.getElementById("start-screen");
+const quizScreen = document.getElementById("quiz-screen");
+const resultScreen = document.getElementById("result-screen");
+
+const startBtn = document.getElementById("start-btn");
+const nextBtn = document.getElementById("next-btn");
+const restartBtn = document.getElementById("restart-btn");
+
+const questionText = document.getElementById("question-text");
+const answerButtons = document.getElementById("answer-buttons");
+
+const currentQuestionText = document.getElementById("current-question");
+const totalQuestionsText = document.getElementById("total-questions");
+
+const progressBar = document.getElementById("progress-bar");
+
+const scoreText = document.getElementById("score-text");
+const percentageText = document.getElementById("percentage-text");
+
+const timerElement = document.getElementById("timer");
