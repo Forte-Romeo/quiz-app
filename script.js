@@ -224,3 +224,26 @@ function updateProgressBar() {
 
     progressBar.style.width = `${progress}%`;
 }
+
+// ===== TIMER ===== //
+function startTimer() {
+    clearInterval(timer);
+    updateTimer();
+
+    timer = setInterval(() => {
+        timeLeft--;
+        updateTimer();
+
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            endQuiz();
+        }
+    }, 1000);
+}
+
+function updateTimer() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+
+    timerElement.textContent = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
